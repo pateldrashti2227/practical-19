@@ -1,0 +1,243 @@
+.app {
+  min-height: 100vh;
+  padding: 35px 20px;
+}
+
+.student-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.page-header h1 {
+  color: #482078;
+  font-size: 34px;
+  margin: 8px 0;
+}
+
+.page-header > p {
+  color: #66527c;
+  font-size: 16px;
+  margin: 10px 0 15px;
+}
+
+.practical-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #e9dcff;
+  color: #54278f;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  max-width: 280px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(57, 26, 90, 0.12);
+}
+
+.summary-icon {
+  font-size: 38px;
+}
+
+.summary-card p {
+  margin: 0 0 5px;
+  color: #6b5b7d;
+}
+
+.summary-card h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #7038b5;
+}
+
+.success-message {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  padding: 14px 18px;
+  background: #e0f7e9;
+  color: #187844;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+.close-message {
+  border: none;
+  background: transparent;
+  color: #187844;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.student-card {
+  min-width: 0;
+  padding: 23px;
+  background: white;
+  border-radius: 17px;
+  border-top: 5px solid #8246c5;
+  box-shadow: 0 8px 25px rgba(57, 26, 90, 0.12);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 13px 30px rgba(57, 26, 90, 0.18);
+}
+
+.student-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.student-avatar {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7038b5, #b18ae8);
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.student-number {
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #f0e7ff;
+  color: #7038b5;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.student-card h2 {
+  margin: 18px 0;
+  color: #54278f;
+  font-size: 20px;
+  overflow-wrap: anywhere;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  background: #f7f2ff;
+  border-radius: 10px;
+  min-height: 70px;
+}
+
+.course-info > span {
+  font-size: 24px;
+}
+
+.course-info small {
+  color: #81718f;
+  font-size: 12px;
+}
+
+.course-info p {
+  margin: 5px 0 0;
+  color: #45236b;
+  font-size: 14px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.delete-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #dc3545, #f06a79);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #b82030, #dc3545);
+  transform: translateY(-2px);
+}
+
+.empty-message {
+  text-align: center;
+  padding: 45px 20px;
+  background: white;
+  border-radius: 17px;
+  color: #54278f;
+}
+
+.empty-icon {
+  font-size: 55px;
+}
+
+.empty-message p {
+  color: #6b5b7d;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px 10px;
+  text-align: center;
+  color: #604a78;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .student-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 14px;
+  }
+
+  .page-header h1 {
+    font-size: 27px;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-card {
+    padding: 20px;
+  }
+}
